@@ -1,0 +1,116 @@
+The dataset appears to be related to restaurant information with several fields, including:
+
+Restaurant Details:
+-------------------
+
+Restaurant_ID, Restaurant_Name: 
+-------------------------------
+	Identifier and name of the restaurant.
+
+City, Country_Code: Location information.
+-------------------
+	Address, Locality, Locality Verbose: Detailed location breakdown.
+
+Geographical Information:
+-------------------------
+	Longitude, Latitude: Geographical coordinates.
+
+Operational Details:
+-------------------
+	Has_Table_booking, Has_Online_delivery, Is_delivering_now: Indicators of service options.
+
+Switch_to_order_menu:
+---------------------	
+	Option to switch to a delivery menu if available.
+
+Pricing and Ratings:
+--------------------
+	Currency, Price_range: Information on the price range and currency.
+
+Aggregate_rating, Rating_color, Rating_text, Votes:
+---------------------------------------------------
+	Rating details, including text, color-coding, and the number of votes.
+	
+With this structure in mind, I’ll proceed with a detailed analysis of each area, including any patterns, distributions, and relationships across the dataset’s columns. ​​
+
+Restaurant Dataset Analysis Report:
+===================================
+1. Overview
+------------
+	The dataset contains 9,551 entries representing various restaurants across 141 cities in 15 different countries. The key columns include geographical information, 	service options, pricing, ratings, and customer votes.
+
+2. Data Structure and Completeness
+----------------------------------
+	Each entry includes 22 columns, covering restaurant attributes like location, pricing, and service availability. Most fields are complete, though a few entries lack cuisine information.
+
+3. Key Findings
+===============
+A. Geographical Distribution
+----------------------------
+	Country: 15 unique countries are represented.
+	Cities: The dataset includes 141 unique cities, with New Delhi being the most frequent entry (5,473 times).
+
+B. Restaurant Services
+----------------------
+	Table Booking Availability:
+	No: 8,393 restaurants.
+	Yes: 1,158 restaurants.
+
+Online Delivery Availability:
+-----------------------------
+	No: 7,100 restaurants.
+	Yes: 2,451 restaurants.
+
+Most restaurants do not offer table booking or online delivery, though approximately 26% have online delivery options.
+
+C. Pricing Information
+----------------------
+	Price Range:
+		Level 1 (Lowest): 4,444 restaurants
+		Level 2: 3,113 restaurants	
+		Level 3: 1,408 restaurants
+		Level 4 (Highest): 586 restaurants
+	The majority of restaurants fall within the lower two pricing levels.
+
+D. Ratings and Customer Feedback
+=================================
+
+Rating Scores:
+--------------
+	Mean Aggregate Rating: 2.67
+	Rating ranges from 0 (unrated) to 4.9.
+
+Rating Categories:
+------------------
+
+	"Average" (Orange): 3,737 restaurants
+	"Not rated": 2,148 restaurants
+	"Good": 2,100 restaurants
+	"Very Good": 1,079 restaurants
+	"Excellent": 301 restaurants
+	Most restaurants fall into the "Average" category, with only 301 classified as "Excellent."
+
+Votes:
+------
+	Average votes per restaurant: 156.9
+	Maximum votes: 10,934
+
+4. Detailed Insights
+====================
+
+A. Currencies
+--------------
+	The dataset includes 12 unique currencies. The most frequent is Indian Rupees (Rs.), used for 86% of entries.
+
+B. Popularity by Ratings
+========================
+
+Ratings and customer votes show:
+--------------------------------
+	Higher-rated restaurants ("Very Good" or "Excellent") tend to attract more votes, indicating a correlation between rating and popularity.
+
+5. Conclusion
+-------------
+	The dataset reveals significant regional and service-related trends. The majority of restaurants do not offer online ordering or table booking, reflecting traditional service models. The pricing and ratings distributions suggest that while affordable dining is widely available, customer satisfaction varies, with a 	majority rating experiences as average or good.
+
+This data can guide future research, helping focus on regions or service types that may need improvement in online accessibility, reservation options, and customer experience initiatives. ​
